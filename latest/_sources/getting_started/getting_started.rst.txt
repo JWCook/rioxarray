@@ -8,7 +8,7 @@ Welcome! This page aims to help you gain a foundational understanding of rioxarr
 rio accessor
 -------------
 
-rioxarray `extends xarray <http://xarray.pydata.org/en/stable/internals.html#extending-xarray>`__
+rioxarray `extends xarray <https://docs.xarray.dev/en/stable/internals/extending-xarray.html>`__
 with the `rio` accessor. The `rio` accessor is activated by importing rioxarray like so:
 
 .. code-block:: python
@@ -70,11 +70,14 @@ Why use :func:`rioxarray.open_rasterio` instead of `xarray.open_rasterio`?
 4. It supports masking and scaling data with the `masked` and `mask_and_scale` kwargs.
 5. It adds the coordinate axis CF metadata.
 6. It loads raster metadata into the attributes.
+7. `xarray.open_rasterio` is deprecated (since v0.20.0)
 
+
+Introductory Information
+--------------------------
 
 .. toctree::
    :maxdepth: 1
-   :caption: Data management:
 
    crs_management.ipynb
    nodata_management.ipynb
